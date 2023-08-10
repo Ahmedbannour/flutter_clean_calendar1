@@ -17,6 +17,7 @@ class CleanCalendarEvent {
       {this.description = '',
       this.location = '',
       required this.id,
+      required this.info,
       required this.id_date,
       required this.startTime,
       required this.endTime,
