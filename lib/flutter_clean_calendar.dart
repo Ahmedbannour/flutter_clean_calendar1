@@ -557,9 +557,16 @@ class _CalendarState extends State<Calendar> {
                                                                   fontWeight: FontWeight.w100,
                                                                   color: Colors.grey
                                                               ),
-
                                                             )
-
+                                                            Text(
+                                                              event.info,
+                                                              style: TextStyle(
+                                                                fontFamily: 'OpenSansBold',
+                                                                fontWeight: FontWeight.bold,
+                                                                fontSize: 15,
+                                                              ),
+                                                              textAlign: TextAlign.center,
+                                                            ),
                                                           ],
                                                         )
                                                       ]
