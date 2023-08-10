@@ -444,10 +444,8 @@ class _CalendarState extends State<Calendar> {
                 padding: EdgeInsets.symmetric(vertical: 10.0),
                 itemBuilder: (BuildContext context, int index) {
                   final CleanCalendarEvent event = _selectedEvents![index];
-                  final String start =
-                      DateFormat('hh:mm a').format(event.startTime).toString().toLowerCase();
-                  final String end =
-                      DateFormat('hh:mm').format(event.endTime).toString().toLowerCase();
+                  final String start =DateFormat('hh:mm a').format(event.startTime).toString().toLowerCase();
+                  final String end = DateFormat('hh:mm').format(event.endTime).toString().toLowerCase();
                   final String startTime = DateFormat('HH:mm a').format(event.startTime).toString().toLowerCase();
                   final String endTime = DateFormat('HH:mm').format(event.endTime).toString().toLowerCase();
                   return AnimationLimiter(

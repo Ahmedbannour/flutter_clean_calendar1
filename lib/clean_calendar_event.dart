@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class CleanCalendarEvent {
   String summary;
+  String info;
   String description;
   String location;
   DateTime startTime;
