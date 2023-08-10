@@ -558,17 +558,19 @@ class _CalendarState extends State<Calendar> {
                                                                   color: Colors.grey
                                                               ),
                                                             )
-                                                            Text(
-                                                              event.info,
-                                                              style: TextStyle(
-                                                                fontFamily: 'OpenSansBold',
-                                                                fontWeight: FontWeight.bold,
-                                                                fontSize: 15,
-                                                              ),
-                                                              textAlign: TextAlign.center,
-                                                            ),
+                                                            
                                                           ],
-                                                        )
+                                                        ),
+                                                        Text(
+                                                          event.info,
+                                                          style: TextStyle(
+                                                            fontFamily: 'OpenSansBold',
+                                                            fontWeight: FontWeight.bold,
+                                                            color :Colors.black54,
+                                                            fontSize: 15,
+                                                          ),
+                                                          textAlign: TextAlign.center,
+                                                        ),
                                                       ]
                                                   )
                                               ),
