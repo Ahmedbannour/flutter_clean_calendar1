@@ -576,7 +576,7 @@ class _CalendarState extends State<Calendar> {
                                                               fontWeight: FontWeight.w100,
                                                               color: Colors.grey
                                                           ),
-                                                          textAlign: TextAlign.center,
+                                                          textAlign: TextAlign.start,
                                                           overflow: TextOverflow.ellipsis,
                                                           maxLines: 2,
                                                         ) : Container(),
