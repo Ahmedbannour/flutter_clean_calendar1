@@ -456,6 +456,7 @@ class _CalendarState extends State<Calendar> {
                           duration: Duration(milliseconds: 200+(index *100)),
                           curve: Curves.linear,
                           child:Container(
+                            height: (event.description != '' && event.description != null) ? 150 : 120,
                             margin: EdgeInsets.symmetric(vertical: 10),
                             child: InkWell(
                                 onTap: () {
