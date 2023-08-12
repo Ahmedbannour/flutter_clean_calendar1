@@ -456,6 +456,7 @@ class _CalendarState extends State<Calendar> {
                           duration: Duration(milliseconds: 200+(index *100)),
                           curve: Curves.linear,
                           child:Container(
+                            height: (event.description != '') ? 150 : 120,
                             margin: EdgeInsets.symmetric(vertical: 10),
                             child: InkWell(
                                 onTap: () {
@@ -500,6 +501,7 @@ class _CalendarState extends State<Calendar> {
                                       Expanded(
                                         flex : 12,
                                         child: Container(
+                                            height: (event.description != '') ? 150 : 120,
                                             margin: EdgeInsets.symmetric(horizontal: 10),
                                             decoration: BoxDecoration(
                                               color: event.color,
@@ -510,7 +512,6 @@ class _CalendarState extends State<Calendar> {
                                                   padding: const EdgeInsets.all(20.0),
                                                   child: Column(
                                                       crossAxisAlignment: CrossAxisAlignment.start,
-                                                      mainAxisSize: MainAxisSize.min,
                                                       children: [
                                                         Text(
                                                           event.summary,
