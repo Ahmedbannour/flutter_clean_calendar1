@@ -448,14 +448,7 @@ class _CalendarState extends State<Calendar> {
                   final String end = DateFormat('hh:mm').format(event.endTime).toString().toLowerCase();
                   final String startTime = DateFormat('HH:mm a').format(event.startTime).toString().toLowerCase();
                   final String endTime = DateFormat('HH:mm').format(event.endTime).toString().toLowerCase();
-                  return AnimationLimiter(
-                    child: AnimationConfiguration.staggeredList(
-                      position: index,
-                      delay: Duration(milliseconds: 500 +(index *50)),
-                      child:  FadeInAnimation(
-                          duration: Duration(milliseconds: 200+(index *100)),
-                          curve: Curves.linear,
-                          child:Container(
+                  return Container(
                             height: (event.description != '') ? 165 : 120,
                             margin: EdgeInsets.symmetric(vertical: 10),
                             child: InkWell(
@@ -590,10 +583,7 @@ class _CalendarState extends State<Calendar> {
                                     ]
                                 )
                             ),
-                          )
-                      ),
-                    ),
-                  );
+                          ;
                 },
                 itemCount: _selectedEvents!.length,
               )
