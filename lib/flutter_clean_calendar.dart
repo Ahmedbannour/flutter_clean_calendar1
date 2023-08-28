@@ -571,7 +571,18 @@ class _CalendarState extends State<Calendar> {
                                                           ),
                                                           textAlign: TextAlign.start,
                                                           overflow: TextOverflow.ellipsis,
-                                                          maxLines: 2,
+                                                          maxLines: 1,
+                                                        ) : Container(),
+                                                        event.description != '' ? Text(
+                                                          'Location : ${event.location}',
+                                                          style: TextStyle(
+                                                              fontFamily: 'OpenSansBold',
+                                                              fontWeight: FontWeight.w100,
+                                                              color: Colors.grey
+                                                          ),
+                                                          textAlign: TextAlign.start,
+                                                          overflow: TextOverflow.ellipsis,
+                                                          maxLines: 1,
                                                         ) : Container(),
                                                       ]
                                                   )
