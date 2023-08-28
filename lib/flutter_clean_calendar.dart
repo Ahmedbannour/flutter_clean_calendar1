@@ -583,7 +583,7 @@ class _CalendarState extends State<Calendar> {
                                     ]
                                 )
                             ),
-                          ;
+                          );
                 },
                 itemCount: _selectedEvents!.length,
               )
